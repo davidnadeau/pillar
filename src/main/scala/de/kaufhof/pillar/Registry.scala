@@ -21,7 +21,7 @@ object Registry {
 
     val parser = Parser()
 
-    directory.listFiles().map {
+    directory.listFiles().filterNot(_.getName.head == '.').map {
       file =>
         val stream = new FileInputStream(file)
         try {

@@ -1,0 +1,1 @@
+Dot files should be ignored during migration. This fixes a bug where macs generate .DS_Store files, breaking the build
